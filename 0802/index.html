@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 10%;
+            border: 2px solid black;
+            transition: all 0.3s;
+            transition: width 10s, height 10s;
+
+        }
+
+        .box:hover {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+
+        .img {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+            border: 2px solid black;
+            transition: all 1s;
+        }
+
+        .img:hover {
+            /* transform: rotate(270deg); */
+            /* transform: scale(2); */
+            /* transform: scalex(2); */
+            /* transform: scaley(2); */
+            /* transform: rotateX(180deg); */
+            /* transform: rotatey(180deg); */
+            /* transform: rotatez(180deg); */
+            transform: rotate(-270deg);
+        }
+
+        .mybutton {
+            background-color: #ff457f;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            transition: 0.3s;
+            color: black;
+        }
+
+        .mybutton:hover {
+            background-color: aqua;
+            color: black;
+        }
+        /* a{
+            
+            text-decoration: none;
+            color: black;
+            background-color: #ff457f;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover{
+            background-color: aqua;
+            transition: all 0.3s;
+        } */
+    </style>
+    <div class="box"></div>
+    <img class="img" src="/2407/Images/photo-1575936123452-b67c3203c357.jpg" alt="">
+    <button class="mybutton">Home</button>
+    
+    <a class="mybutton" href="#" style="text-decoration: none;">Hello</a>
+</head>
+
+<body>
+
+</body>
+
+</html>
