@@ -1,0 +1,43 @@
+
+html{
+    scroll-behavior: smooth;   
+    border-style: dotted;
+    border-width: 3px;
+    /* border: 1px solid green; */
+}
+.table,td{
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+p,ol,pre{
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px green solid;
+    padding: 10px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.xyz{
+    background-color: white;
+    /* border: 1px solid black;
+    border-collapse: collapse; */
+    width: 100%;
+}
+footer{
+    background-color: aqua;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
