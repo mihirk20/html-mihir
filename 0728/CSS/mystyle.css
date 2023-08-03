@@ -1,0 +1,29 @@
+
+        p {
+            color: yellow;
+            background-color: green;
+            text-align: justify;
+             /* border: 2px green solid; */
+    border-style: dashed dotted groove none;
+    border-color: aqua green blue red;
+    /* padding: 10px; */
+    /* padding: 10px 20px 30px 90px; clockwise */
+    /* padding-left: 100px; */
+    /* padding: 10px 20px 30px; */
+    /* padding: 10px 20px; */
+        }
+
+        .xyz {
+            color: blue;
+            background-color: grey;
+            /* background-color: grey !important; */
+        }
+
+        .abc {
+            font-size: 50px;
+            background-color: black;
+        }
+
+        #myid {
+            color: yellow;
+        }
