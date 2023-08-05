@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(24, 21, 21);
+    width: 100%;
+}
+form {
+    background-color: aqua;
+    margin: 100px 300px;
+    padding: 20px;
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, rgb(84, 218, 84), rgb(82, 82, 218));
+    border: none;
+    border: solid 0px;
+    border-bottom: 10px skyblue;
+    border-radius: 20px;
+    
+}
+
+input {
+    border-radius: 7px;
+    margin: 0px 200px 50px 0px;
+    border: 0px;
+    outline-color: white;
+    height: 30px;
+
+}
+table,tr{
+    width: 100%;
+}
+.button{
+    border-radius: 20px;
+    height: 30px;
+    width: 90px;
+    transition: 0.3s;
+    margin: 0px 290px;
+
+}
+.button:hover{
+    /* background-color: grey; */
+    /* color: white; */
+    transform: scale(1.3);
+    
+}
