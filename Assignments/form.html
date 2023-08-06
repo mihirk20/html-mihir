@@ -9,39 +9,40 @@
 
 <body>
     <form action="">
-        <h1>Enter Your Details:-</h1>
+        <h1><u>Enter Your Details:-</u></h1>
         <table>
             <tr>
                 <td><label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" placeholder="Enter your name">
                 </td>
-                <td><label for="Password">Password</label>
-                    <input type="password" id="password">
+                <td><label for="Password" style="margin-left: 100px;">Password</label>
+                    <input type="password" id="password" style="margin-left: 100px;" placeholder="Enter password">
                 </td>
             </tr>
             <tr>
                 <td><label for="email">E-mail</label>
                     <input type="email" id="email" placeholder="ex-xyz@gmail.com">
                 </td>
-                <td><label for="tel">Telephone No. :-</label>
-                    <input maxlength=15 pattern="[0-9]{10}" type="tel" id="tel" placeholder="+91-" value="+91-">
+                <td><label for="tel" style="margin-left: 100px;">Telephone No. :-</label>
+                    <input maxlength=15 pattern="[+91-][0-9]{10}" type="tel" id="tel" placeholder="+91-" value="+91-" style="margin-left: 100px;">
                 </td>
             </tr>
             <tr>
                 <td>
                     <p style="font-family: sans-serif; margin-bottom: 8px;margin-top: 0px;">Select your Gender:-</p>
-                    <label for="male" style="margin-top: 0px;">Male</label>
-                    <input type="radio" id="male" name="gender" style="margin-right: 1px;">
+                    <input type="radio" id="male" name="gender" style="height: 12px; margin:1px" value="male">
+                    <label for="male">Male</label><br>                   
+                    <input type="radio" id="female" name="gender" style="height: 12px;margin-right: 0%;" value="female">
                     <label for="female">Female</label>
-                    <input type="radio" id="female" name="gender" style="margin-right: 1px;">
+                    
                 </td>
                 <td>
-                    <p style="font-family: sans-serif; margin-bottom: 8px;margin-top: 0px;">Date of Birth:-</p>
-                    <input type="date">
+                    <p style="font-family: sans-serif;margin-left: 100px;">Date of Birth:-</p>
+                    <input type="date" style="margin-left: 100px;" >
                 </td>
             </tr>
         </table>
-        <input class="button" type="submit" value="Submit">
+        <input class="button" type="submit" value="Submit" >
     </form>
 </body>
 
