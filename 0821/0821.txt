@@ -1,0 +1,45 @@
+document.getElementById("Hello")
+null
+document.getElementById("hello")
+<h3 id=​"hello">​Hello​</h3>​
+document.getElementById("hello").style.color="red"
+"red"
+document.getElementById("hello").style.backgroundColor="green"
+"green"
+document.getElementById("hello").style.backgroundcolor="green"
+"green"
+document.getElementById("hello").style.backgroundcolor="aqua"
+"aqua"
+document.getElementById("hello").style.backgroundColor="aqua"
+"aqua"
+
+------------------------------------------------------------------------------
+
+document.getElementsByClassName("btn")
+HTMLCollection [button.btn]
+document.getElementsByClassName("btn")[0]
+<button class=​"btn">​click me​</button>​
+---------------------------------------------------------------------
+document.querySelector("li")
+<li>​…​</li>​::marker​"one"</li>​
+
+document.querySelector("li a")
+<a href=​"#">​two​</a>​
+----------------------------------------------------------------------------
+document.querySelector(".hello").classList
+
+-----------------------------------------------------------------------------
+let hello=document.querySelector(".hello")
+undefined
+hello.classList.add("change")
+undefined
+hello.classList.remove("change")
+undefined
+hello.classList.toggle("change")
+true
+
+---------------------------------------------------------------------------------
+document.querySelector("li a").getAttribute("href")
+"#"
+document.querySelector("li a").getAttribute("href","https://www.google.com")
+"#"
