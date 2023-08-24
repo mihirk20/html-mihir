@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 90%;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+}
+.display-modal{
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    margin:3rem 4rem;
+    padding: 1rem;
+    background-color: blue;
+    color:white;
+    border-radius: 5rem;
+    z-index: 1;
+    outline-color: white;
+    
+}
+.modal{
+    position: absolute;
+    width: 30%;
+    padding: 1rem;
+    top: 30%;
+    left: 33%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 0rem 0.5rem 1rem black;
+    text-align: justify;
+    z-index: 2;
+}
+.close-modal{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+h2{
+    margin-bottom: 0.5rem;
+}
+.hide{
+    display: none;
+}
+.blureffect{
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
