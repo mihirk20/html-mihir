@@ -1,0 +1,21 @@
+body {
+    justify-content: center;
+    display: flex;
+    background-color: #279EFF;
+    font-family: 'Play', sans-serif;
+}
+
+.container {
+    margin-top: 1rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px black;
+    background-color: antiquewhite;
+    min-height: 500px;
+    min-width: 350px;
+    padding: 1rem;
+}
+
+.container h1 {
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+.todolist li {
+    margin: 3px;
+    border: 3px solid #279eff8a;
+    padding: 1rem;
+    border-radius: 7px;
+}
