@@ -10,10 +10,13 @@ body {
     border: 2px solid transparent;
     border-radius: 20px;
     box-shadow: 2px 3px 4px black;
-    background-color: antiquewhite;
+    width: fit-content;
     min-height: 500px;
     min-width: 350px;
     padding: 1rem;
+    background-color: #e5e5f7;
+    background-size: 30px 30px;
+    background-image: repeating-linear-gradient(0deg, #f7f444, #e5f744 1px, #ffffff 1px, #ffffff);
 }
 
 .container h1 {
