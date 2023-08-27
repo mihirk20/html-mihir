@@ -19,6 +19,7 @@ body {
     font-size: 7rem;
     width: fit-content;
     justify-content: flex-start;
+    padding-left: 1rem;
 }
 
 .container {
