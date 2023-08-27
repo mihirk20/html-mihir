@@ -13,8 +13,8 @@ const Additem = (props) => {
     };
     return (
         <form className="form" onSubmit={submitHandler}>
-            <input type="text" onChange={entryHandler} />
-            <button type="submit">Add</button>
+            <input type="text" className="input" onChange={entryHandler} />
+            <button type="submit" className="button">Add</button>
         </form>
     );
 };
