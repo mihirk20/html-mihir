@@ -1,21 +1,20 @@
 import React from "react";
 import Users from "./users/pages/Users";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import NewLocations from "./locations/pages/NewLocations";
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+// import MainNavigation from "../common/components/Navigation/MainNavigation";
 const App = () => {
   return <Router>
-    <Route path="/">
+    <Switch>
+    <Route path="/" exact>
       <Users />
     </Route>
-
+    <Route path="/locations/new" exact>
+      <NewLocations />
+    </Route>
+    <Redirect to="/" />
+    </Switch>
   </Router>;
-  // (
-  //   <div>
-  //     <users/>
-  //     <h1>React starts here</h1>
-  //   </div>
-  //   );
-};
-
-
-
+}
 export default App;
