@@ -4,8 +4,8 @@ const Users=()=>{
 
         const ALL_USERS=
         [
-            {id:'u1',name:'xyz',pic:'https://picsum.photos/200',numberoflocation:"1 ",},
-            {id:'u2',name:'qwe',pic:'https://picsum.photos/200',numberoflocation:"3 ",}
+            {id:'u1',name:'xyz',pic:'https://picsum.photos/200',numberoflocation:1 ,},
+            {id:'u2',name:'qwe',pic:'https://picsum.photos/200',numberoflocation:3 ,}
 
         ];
        return <UsersList items ={ALL_USERS}/>
