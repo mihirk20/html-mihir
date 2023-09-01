@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./LocationsItem.css"
 const Locationsitems=(props)=>{
     return(
         <li className="locationitem">
-            <div className="locationitme-content">
+            <div className="locationitem-content">
                 <div className="locationitem-pic">
                     <img src={props.pic} alt={props.title}/>
                 </div>

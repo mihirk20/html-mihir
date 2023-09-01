@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks";
 const MainNavigation=(props)=>{
     return (
         <MainHeader>
-            <h1>
+            <h1 className="mainnav-title">
                 <Link to ="/">PhotoShare</Link>
             </h1>
             <nav>

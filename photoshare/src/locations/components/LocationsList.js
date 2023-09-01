@@ -14,8 +14,8 @@ return(
         {props.items.map((location)=>{
             return(
                 <LocationsItem
-                key={location.userid}
-                id={location.userid}
+                key={location.id}
+                id={location.id}
                 title={location.title}
                 address={location.address}
                 desc={location.desc}
