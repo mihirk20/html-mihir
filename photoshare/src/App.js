@@ -16,26 +16,43 @@ const App = () => {
   const logout = useCallback(() => {
     setloggedin(false);
   }, []);
+
+  let validRoutes;
+  if (isloggedin) {
+    validRoutes = (
+      <Switch>
+        <Route path="/" exact>
+          <Users />
+        </Route>
+        <Route path="/:userid/locations">
+          <UserLocations />
+        </Route>
+        <Route path="/locations/new" exact>
+          <NewLocations />
+        </Route>
+        <Redirect to="/" />
+      </Switch>
+    )
+  }
+  else {
+    validRoutes = (
+      <Switch>
+        <Route path="/" exact>
+          <Users />
+        </Route>
+        <Route path to="/Login">
+          <Login />
+        </Route>
+        <Redirect to="/login" />
+      </Switch>
+    )
+  }
   return (
     <LoginContext.Provider value={{ isloggedin: isloggedin, login: login, logout: logout }}>
       <Router>
         <MainNavigation />
         <main>
-          <Switch>
-            <Route path="/" exact>
-              <Users />
-            </Route>
-            <Route path="/:userid/locations">
-              <UserLocations />
-            </Route>
-            <Route path="/locations/new" exact>
-              <NewLocations />
-            </Route>
-            <Route path to="/Login">
-              <Login />
-            </Route>
-            <Redirect to="/" />
-          </Switch>
+          {validRoutes}
         </main>
       </Router>
     </LoginContext.Provider>

@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Login.css";
-
+import { LoginContext } from "../../common/components/context";
 const Login = () => {
+    const loggedin=useContext(LoginContext)
     const [newlogin, setnewlogin] = useState({
         email: "",
         password: ""
     });
     const submitHandler = (event) => {
         event.preventDefault();
+        loggedin.login();
         console.log("credentials:", newlogin);
     };
     const changeHandler = (event) => {
