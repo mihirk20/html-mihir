@@ -9,11 +9,14 @@ import Login from "./users/pages/Login";
 import { LoginContext } from "./common/components/context";
 
 const App = () => {
+  const [userID, setUserID] = useState(null);
   const [isloggedin, setloggedin] = useState(false);
-  const login = useCallback(() => {
+  const login = useCallback((uid) => {
+    setUserID(uid);
     setloggedin(true);
   }, []);
   const logout = useCallback(() => {
+    setUserID(null);
     setloggedin(false);
   }, []);
 
@@ -48,7 +51,7 @@ const App = () => {
     )
   }
   return (
-    <LoginContext.Provider value={{ isloggedin: isloggedin, login: login, logout: logout }}>
+    <LoginContext.Provider value={{ isloggedin: isloggedin, userID: userID, login: login, logout: logout }}>
       <Router>
         <MainNavigation />
         <main>

@@ -15,7 +15,7 @@ const NavLinks=()=>{
             </li>
             {loggedin.isloggedin && (
             <li> 
-                   <NavLink to ="/u1/locations">My Locations</NavLink>
+                   <NavLink to ={`/${loggedin.userID}/locations`}>My Locations</NavLink>
             </li>
                )}
                {loggedin.isloggedin &&(
